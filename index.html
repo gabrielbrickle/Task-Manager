@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="Atlatl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task Manager</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.7/angular-sanitize.js" charset="utf-8"></script>
+    </script>
+    <script src="app.js"></script>
+</head>
+
+
+<body>
+
+    <main ng-view></main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+        $(function() {
+            $(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
+                $(".top-bar").toggleClass("top-bar-close");
+                $(".middle-bar").toggleClass("middle-bar-close");
+                $(".bottom-bar").toggleClass("bottom-bar-close");
+            });
+        });
+    </script>
+</body>
+
+</html>
