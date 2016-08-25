@@ -1,3 +1,5 @@
+[Live Demo](http://taskmanager.surge.sh/)
+
 # Synopsis
 
 A simple widget for task management. The user can view tasks remaining for the day, week and month.

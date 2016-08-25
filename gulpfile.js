@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var browserify = require('gulp-browserify');
+var surge = require('gulp-surge');
 
 gulp.task('default', ['html', 'css', 'js'])
 
@@ -31,4 +32,11 @@ gulp.task('watch', function() {
     gulp.watch('./index.html', ['html']);
     gulp.watch('./templates/*.html', ['html']);
     gulp.watch('./templates/*/*.html', ['html']);
+});
+
+gulp.task('deploy', [], function () {
+ return surge({
+   project: './public',         // Path to your static build directory
+   domain: 'taskmanager.surge.sh'  // Your domain or Surge subdomain
+ })
 });

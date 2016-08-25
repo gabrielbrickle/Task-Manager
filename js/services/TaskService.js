@@ -23,7 +23,7 @@ module.exports = function(app) {
 
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/api/quotes.json',
+            url: './api/quotes.json',
             responseType: "json"
         }).then(function(response) {
             let quotes = response.data;
@@ -47,7 +47,7 @@ module.exports = function(app) {
         });
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/api/opportunities.json',
+            url: './api/opportunities.json',
         }).then(function(response) {
             let opportunities = response.data;
             angular.copy(opportunities, oppsArray)
@@ -71,7 +71,7 @@ module.exports = function(app) {
 
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/api/tasks.json',
+            url: './api/tasks.json',
         }).then(function(response) {
             let tasks = response.data;
             angular.copy(tasks, taskArray)

@@ -20,6 +20,8 @@
     "jquery": "^3.1.0",
     "moment": "^2.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-surge": "^0.1.0"
+  },
   "description": ""
 }
