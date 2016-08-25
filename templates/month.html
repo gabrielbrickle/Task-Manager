@@ -1,34 +1,35 @@
 <header class="header">
-  <h1 class="headline">Welcome back!</h1>
-  <ul class="header-subnav">
-    <li><a href="#overview" >Dashboard</a></li>
-    <li><a href="#today" >Today</a></li>
-    <li><a href="#week"  >This Week</a></li>
-    <li><a href="#month" class="is-active">This Month</a></li>
-  </ul>
+    <h1 class="headline">Welcome back!</h1>
+    <h6>Today's Date: 5/15/16</h6>
+    <ul class="header-subnav">
+        <li><a href="#overview">Dashboard</a></li>
+        <li><a href="#today">Today</a></li>
+        <li><a href="#week">This Week</a></li>
+        <li><a href="#month" class="is-active">This Month</a></li>
+    </ul>
 </header>
 
 <div class="overview" ng-model="quoteArray">
-  <ul>
-     <h3>{{quoteArray.length}}</h3>
-    <li>Quotes</li>
-  </ul>
+    <ul>
+        <h3>{{monthlyQuoteArray.length}}</h3>
+        <li>Quotes</li>
+    </ul>
 </div>
 <div class="overview" ng-model="oppsArray">
-  <ul>
-     <h3>{{oppsArray.length}}</h3>
-    <li>Opportunities</li>
-  </ul>
+    <ul>
+        <h3>{{monthlyOppsArray.length}}</h3>
+        <li>Opportunities</li>
+    </ul>
 </div>
 <div class="overview" ng-model="meetingArray">
-  <ul>
-     <h3>{{meetingArray.length}}</h3>
-    <li>Meetings</li>
-  </ul>
+    <ul>
+        <h3>{{monthlyMeetingArray.length}}</h3>
+        <li>Meetings</li>
+    </ul>
 </div>
 <div class="overview" ng-model="taskArray">
-  <ul>
-     <h3>{{taskArray.length}}</h3>
-    <li>Tasks</li>
-  </ul>
+    <ul>
+        <h3>{{monthlyTaskArray.length}}</h3>
+        <li>Tasks</li>
+    </ul>
 </div>

@@ -6,6 +6,15 @@ module.exports = function(app) {
         let oppsArray = [];
         let taskArray = [];
 
+        // var moment = require('momentjs')
+
+        var todaysDate = 1
+        var date2 = 2
+
+        var answer = moment(todaysDate).diff(date2).format()
+
+        console.log("this is the answer",answer);
+
         $http({
             method: 'GET',
             url: 'http://localhost:3000/api/quotes.json',
@@ -43,7 +52,15 @@ module.exports = function(app) {
             let tasks = response.data;
             console.log("object with userss", tasks);
             angular.copy(tasks, taskArray)
+
+            tasks.forEach(function(element) {
+                console.log(element.due_date);
+                if (element.due_date === "5/15/16" || element.due_date) {
+
+                }
+            })
         });
+
 
         return {
             getQuotes: function() {
@@ -58,6 +75,9 @@ module.exports = function(app) {
             getTasks: function() {
                 return taskArray;
             },
+            getTotal: function() {
+                return totalArray;
+            }
         }
     }]);
 }

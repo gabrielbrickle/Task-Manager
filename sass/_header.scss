@@ -7,7 +7,7 @@ $transition: all .35s ease-in-out;
 
 .header {
   text-align: center;
-  background: $header-bg;
+  background: #607d8b;
   background-size: cover;
   position: relative;
   overflow: visible;
@@ -17,6 +17,10 @@ $transition: all .35s ease-in-out;
   .headline {
     color: #ffe;
   }
+}
+
+h6 {
+  color: #fff;
 }
 
 .header-subnav {
