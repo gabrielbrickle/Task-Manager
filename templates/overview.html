@@ -1,25 +1,14 @@
 <header class="header" ng-model="date">
-    <h1 class="headline">Welcome back!</h1>
-    <h6>Today's Date: 5/15/16</h6>
+    <h1 class="headline">Dashboard</h1>
+    <h6>Today's Date: 5/14/16</h6>
     <ul class="header-subnav">
 
         <li><a href="#overview" class="is-active">Dashboard</a></li>
         <li><a href="#today">Today</a></li>
-        <li><a href="#week">This Week</a></li>
-        <li><a href="#month">This Month</a></li>
+        <li><a href="#week">Next 7 Days</a></li>
+        <li><a href="#month">Next 30 Days</a></li>
     </ul>
 </header>
-
-<div class="overview" ng-model="meetingArray">
-    <ul>
-        <h3>{{meetingArray.length}}</h3>
-        <li>Meetings</li>
-    </ul>
-</div>
-
-
-
-
 
 <div class="row features">
     <div class="medium-4 columns" ng-model="quoteArray">
@@ -27,14 +16,18 @@
             <span class="">{{quoteArray.length}}</span>
         </div>
         <h3>Quotes</h3>
+        <button type="button" name="button" ng-click="showQuote =! showQuote">details</button>
         <hr>
-
     </div>
+
+
     <div class="medium-4 columns" ng-model="taskArray">
         <div class="round-icon">
             <span class="">{{taskArray.length}}</span>
         </div>
         <h3>Tasks</h3>
+        <button type="button" name="button" ng-click="showTask =! showTask">details</button>
+
         <hr>
     </div>
     <div class="medium-4 columns" ng-model="oppsArray">
@@ -42,7 +35,47 @@
             <span class="">{{oppsArray.length}}</span>
         </div>
         <h3>Opportunities</h3>
+        <button type="button" name="button" ng-click="showOpps =! showOpps">details</button>
+
         <hr>
 
+    </div>
+</div>
+
+
+<div class="row" ng-show="showQuote">
+    <div class="small-9 columns small-centered">
+        <article class="event" ng-repeat="quote in quoteArray">
+            <div class="event-desc">
+                <h4 class="event-desc-header">{{quote.name}}</h4>
+                <p class="event-desc-detail"><span class="event-desc-time"></span>{{quote.expiration_date}}</p>
+            </div>
+        </article>
+        <hr>
+    </div>
+</div>
+
+
+<div class="row" ng-show="showTask">
+    <div class="small-9 columns small-centered">
+        <article class="event" ng-repeat="task in taskArray">
+            <div class="event-desc">
+                <h4 class="event-desc-header">{{task.name}}</h4>
+                <p class="event-desc-detail"><span class="event-desc-time"></span>{{task.due_date}}</p>
+            </div>
+        </article>
+        <hr>
+    </div>
+</div>
+
+<div class="row" ng-show="showOpps">
+    <div class="small-9 columns small-centered">
+        <article class="event" ng-repeat="opp in oppsArray">
+            <div class="event-desc">
+                <h4 class="event-desc-header">{{opp.name}}</h4>
+                <p class="event-desc-detail"><span class="event-desc-time"></span>{{opp.expected_close}}</p>
+            </div>
+        </article>
+        <hr>
     </div>
 </div>

@@ -1,36 +1,37 @@
 <header class="header">
-  <h1 class="headline">Welcome back!</h1>
-  <h6>Today's Date: 5/15/16</h6>
+    <h1 class="headline">Weekly Overview</h1>
+    <h6>Today's Date: 5/14/16</h6>
 
-  <ul class="header-subnav">
-    <li><a href="#overview" >Dashboard</a></li>
-    <li><a href="#today">Today</a></li>
-    <li><a href="#week" class="is-active" >This Week</a></li>
-    <li><a  href="#month">This Month</a></li>
-  </ul>
+    <ul class="header-subnav">
+        <li><a href="#overview">Dashboard</a></li>
+        <li><a href="#today">Today</a></li>
+        <li><a href="#week" class="is-active">Next 7 Days</a></li>
+        <li><a href="#month">Next 30 Days</a></li>
+    </ul>
 </header>
 
-<div class="overview" ng-model="quoteArray">
-    <ul>
-        <h3>{{quoteArray.length}}</h3>
-        <li>Quotes</li>
-    </ul>
-</div>
-<div class="overview" ng-model="oppsArray">
-    <ul>
-        <h3>{{oppsArray.length}}</h3>
-        <li>Opportunities</li>
-    </ul>
-</div>
-<div class="overview" ng-model="meetingArray">
-    <ul>
-        <h3>{{meetingArray.length}}</h3>
-        <li>Meetings</li>
-    </ul>
-</div>
-<div class="overview" ng-model="taskArray">
-    <ul>
-        <h3>{{taskArray.length}}</h3>
-        <li>Tasks</li>
-    </ul>
+<div class="row features">
+    <div class="medium-4 columns" ng-model="weeklyQuoteArray">
+        <div class="round-icon">
+            <span class="">{{weeklyQuoteArray.length}}</span>
+        </div>
+        <h3>Quotes</h3>
+        <hr>
+
+    </div>
+    <div class="medium-4 columns" ng-model="weeklyTaskArray">
+        <div class="round-icon">
+            <span class="">{{weeklyTaskArray.length}}</span>
+        </div>
+        <h3>Tasks</h3>
+        <hr>
+    </div>
+    <div class="medium-4 columns" ng-model="weeklyOppsArray">
+        <div class="round-icon">
+            <span class="">{{weeklyOppsArray.length}}</span>
+        </div>
+        <h3>Opportunities</h3>
+        <hr>
+
+    </div>
 </div>

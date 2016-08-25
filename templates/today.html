@@ -1,36 +1,37 @@
 <header class="header">
-    <h1 class="headline">Welcome back!</h1>
-    <h6>Today's Date: 5/15/16</h6>
+    <h1 class="headline">Daily Overview</h1>
+    <h6>Today's Date: 5/14/16</h6>
 
     <ul class="header-subnav">
         <li><a href="#overview">Dashboard</a></li>
         <li><a href="#today" class="is-active">Today</a></li>
-        <li><a href="#week">This Week</a></li>
-        <li><a href="#month">This Month</a></li>
+        <li><a href="#week">Next 7 Days</a></li>
+        <li><a href="#month">Next 30 Days</a></li>
     </ul>
 </header>
 
-<div class="overview" ng-model="quoteArray">
-    <ul>
-        <h3>{{quoteArray.length}}</h3>
-        <li>Quotes</li>
-    </ul>
-</div>
-<div class="overview" ng-model="oppsArray">
-    <ul>
-        <h3>{{oppsArray.length}}</h3>
-        <li>Opportunities</li>
-    </ul>
-</div>
-<div class="overview" ng-model="meetingArray">
-    <ul>
-        <h3>{{meetingArray.length}}</h3>
-        <li>Meetings</li>
-    </ul>
-</div>
-<div class="overview" ng-model="taskArray">
-    <ul>
-        <h3>{{taskArray.length}}</h3>
-        <li>Tasks</li>
-    </ul>
+<div class="row features">
+    <div class="medium-4 columns" ng-model="dailyQuoteArray">
+        <div class="round-icon">
+            <span class="">{{dailyQuoteArray.length}}</span>
+        </div>
+        <h3>Quotes</h3>
+        <hr>
+
+    </div>
+    <div class="medium-4 columns" ng-model="dailyTaskArray">
+        <div class="round-icon">
+            <span class="">{{dailyTaskArray.length}}</span>
+        </div>
+        <h3>Tasks</h3>
+        <hr>
+    </div>
+    <div class="medium-4 columns" ng-model="dailyOppsArray">
+        <div class="round-icon">
+            <span class="">{{dailyOppsArray.length}}</span>
+        </div>
+        <h3>Opportunities</h3>
+        <hr>
+
+    </div>
 </div>
