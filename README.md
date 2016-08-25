@@ -1,18 +1,18 @@
-Synopsis
+# Synopsis
 
 A simple widget for task management. The user can view tasks remaining for the day, week and month.
 
-Libraries and Frameworks
+# Libraries and Frameworks
 
-Angular.js
-ZURB Foundation
-gulp.js
+Angular.js <br />
+ZURB Foundation <br />
+gulp.js <br />
 moment.js
 
-Installation
+# Installation
 
-npm install --save gulp
-npm install gulp-sass
-npm install gulp-browserify
-npm install gulp-watch
+npm install --save gulp <br />
+npm install gulp-sass <br />
+npm install gulp-browserify <br />
+npm install gulp-watch <br />
 npm install moment --save
