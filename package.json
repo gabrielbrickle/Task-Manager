@@ -1,27 +1,30 @@
 {
-  "name": "taskmanager",
-  "version": "1.0.0",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabrielbrickle/Task-Manager.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gabrielbrickle/Task-Manager/issues"
-  },
-  "homepage": "https://github.com/gabrielbrickle/Task-Manager#readme",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "jquery": "^3.1.0",
-    "moment": "^2.14.1"
-  },
-  "devDependencies": {
-    "gulp-surge": "^0.1.0"
-  },
-  "description": ""
+    "name": "taskmanager",
+    "version": "1.0.0",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gabrielbrickle/Task-Manager.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gabrielbrickle/Task-Manager/issues"
+    },
+    "homepage": "https://github.com/gabrielbrickle/Task-Manager#readme",
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "jquery": "^3.1.0",
+        "moment": "^2.14.1"
+    },
+    "devDependencies": {
+        "gulp-browserify": "^0.5.1",
+        "gulp-sass": "^2.3.2",
+        "gulp-surge": "^0.1.0",
+        "gulp-watch": "^4.3.9"
+    },
+    "description": ""
 }
